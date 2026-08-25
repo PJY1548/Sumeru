@@ -1,6 +1,6 @@
 ### 一个基于 Cloudflare Workers + D1 数据库 + KV 存储构建的现代化个人博客系统。
 
-## ✨ 实例页 [Sumeru](sumeru.ggff.net)
+## ✨ 实例页 [Sumeru](https://sumeru.ggff.net)
 ### ![预览](https://github.com/PJY1548/Sumeru/blob/main/preview.png)
 
 ## 🏗 第三放api引用
