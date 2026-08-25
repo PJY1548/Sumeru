@@ -50,6 +50,7 @@
 
 ```bash
 npm install
+npx wrangler login
 ```
 
 ### 2. 配置 Cloudflare 资源
@@ -81,40 +82,29 @@ id = "your-kv-namespace-id"
 
 ```bash
 # 设置 JWT 密钥（必需）
-wrangler secret put JWT_SECRET
+npx wrangler secret put JWT_SECRET
 
 # 可选：自定义 JWT 签发者
-wrangler secret put JWT_ISSUER
+npx wrangler secret put JWT_ISSUER
 ```
 
 ### 4. 上传静态页面到 KV
 
 ```bash
-npx wrangler kv:key put --binding=sumeru index.html --path=index.html
-npx wrangler kv:key put --binding=sumeru login.html --path=login.html
-npx wrangler kv:key put --binding=sumeru posts.html --path=posts.html
-npx wrangler kv:key put --binding=sumeru post.html --path=post.html
-npx wrangler kv:key put --binding=sumeru profile.html --path=profile.html
-npx wrangler kv:key put --binding=sumeru user.html --path=user.html
-```
-或者可能是
-```bash
-npx wrangler kv key put index.html --path=index.html --binding=sumeru
-npx wrangler kv key put login.html --path=index.html --binding=sumeru
-npx wrangler kv key put posts.html --path=index.html --binding=sumeru
-npx wrangler kv key put post.htmll --path=index.html --binding=sumeru
-npx wrangler kv key put profile.html --path=index.html --binding=sumeru
-npx wrangler kv key put user.html --path=index.html --binding=sumeru
+npx wrangler kv key put index.html --path=index.html --binding=sumeru --remote
+npx wrangler kv key put login.html --path=index.html --binding=sumeru --remote
+npx wrangler kv key put posts.html --path=index.html --binding=sumeru --remote
+npx wrangler kv key put post.htmll --path=index.html --binding=sumeru --remote
+npx wrangler kv key put profile.html --path=index.html --binding=sumeru --remote
+npx wrangler kv key put user.html --path=index.html --binding=sumeru --remote
 ```
 或者[Cloudflare仪表盘](https://dash.cloudflare.com/)进行手动上传
 
 ### 6. 部署环境
 
 ```bash
-# 部署到 Cloudflare Workers
-npm run deploy
-# 或
-wrangler deploy
+# 部署到Server.js Cloudflare Workers
+npx wrangler deploy
 ```
 ### 7.关于文章发布
 前端没有设置发布入口，请前往
