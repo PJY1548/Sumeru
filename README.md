@@ -3,10 +3,10 @@
 ## ✨ 实例页 [Sumeru](https://sumeru.ggff.net)
 ### ![预览](https://github.com/PJY1548/Sumeru/blob/main/preview.png)
 
-## 🏗 第三放api引用
-### 感谢[次元API](https://tc.alcy.cc/)提供随机背景
-### 感谢[浮沉博客](https://www.fuchenboke.cn/)提供随机文案
-### 第一文章封面采用[Bing每日一图]
+### 🏗 第三放api引用
+#### 感谢 [次元API](https://tc.alcy.cc/) 提供随机背景
+#### 感谢 [浮沉博客](https://www.fuchenboke.cn/) 提供随机文案
+#### 第一文章封面采用 [Bing每日一图]()
 
 ## ✨ 功能特性
 
