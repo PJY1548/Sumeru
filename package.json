@@ -1,0 +1,16 @@
+{
+  "name": "sumeru",
+  "version": "1.0.0",
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.3.0",
+    "bcryptjs": "^2.4.3",
+    "itty-router": "^4.0.23",
+    "jose": "^5.6.3",
+    "marked": "^18.0.7",
+    "sanitize-html": "^2.11.0"
+  },
+  "devDependencies": {
+    "toml": "^3.0.0",
+    "wrangler": "^4.59.2"
+  }
+}
